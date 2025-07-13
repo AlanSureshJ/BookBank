@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points System - Book Bank System</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Bank System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Book Catalog</a></li>
+                <li><a href="exchange.html">Book Exchange</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Points System</h2>
+        <div id="user-points">
+            <h3>Your Points</h3>
+            <p>Current Points: <span id="current-points">0</span></p>
+        </div>
+        <div id="earn-points">
+            <h3>Earn Points</h3>
+            <ul>
+                <li>Donate a book: 10 points</li>
+                <li>Write a book review: 5 points</li>
+                <li>Participate in book exchange: 15 points</li>
+            </ul>
+        </div>
+        <div id="redeem-points">
+            <h3>Redeem Points</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reward</th>
+                        <th>Points Required</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Week Book Rental</td>
+                        <td>50</td>
+                        <td><button class="redeem-btn" data-points="50">Redeem</button></td>
+                    </tr>
+                    <tr>
+                        <td>1 Month Book Rental</td>
+                        <td>150</td>
+                        <td><button class="redeem-btn" data-points="150">Redeem</button></td>
+                    </tr>
+                    <tr>
+                        <td>Book Purchase</td>
+                        <td>300</td>
+                        <td><button class="redeem-btn" data-points="300">Redeem</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Book Bank System</p>
+    </footer>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/points.js"></script>
+</body>
+</html>
